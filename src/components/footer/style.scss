@@ -1,0 +1,24 @@
+.footer{
+    background-color: bg-color(grey-dark);
+
+    &__container{
+        height: 130px;
+        @include aligment();
+        flex-direction: column;
+        color: text-color(light);
+    }
+
+    &__text{
+        font-size: rem(16px);
+        margin-bottom: 10px;
+    }
+
+    &__link{
+        font-size: rem(14px);
+        color: text-color(blue);
+
+        &:hover{
+            color: text-color(blue-hover);
+        }
+    }
+}
