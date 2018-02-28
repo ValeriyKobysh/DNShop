@@ -2,6 +2,7 @@
 node_modules/
 dist/
 .vs/
+docs/
 npm-debug.log
 yarn-error.log
 

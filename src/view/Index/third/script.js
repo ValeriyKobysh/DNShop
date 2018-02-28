@@ -1,20 +1,25 @@
+//region import modules
+import { mapGetters } from 'vuex'
+//endregion
+
 export default {
-    name: 'foo',
     data() {
         return {
-            
+
         }
     },
     computed: {
-        
+        ...mapGetters(['User', 'Cash'])
     },
     props: {
-        
+
     },
     methods: {
-        
+
     },
     components: {
-        
+
     },
+    created(){
+    }
 }

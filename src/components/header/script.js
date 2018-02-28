@@ -1,5 +1,4 @@
 export default {
-    name: 'foo',
     data() {
         return {
             

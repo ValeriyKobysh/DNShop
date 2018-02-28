@@ -1,0 +1,10 @@
+.profile{
+
+    &__container{
+        display: flex;
+    }
+
+    &__content{
+        flex-grow: 1;
+    }
+}

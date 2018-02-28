@@ -1,5 +1,9 @@
+//region import icons
+import sendIcon from '../../assets/icons/send-icon.svg'
+//endregion
+
 export default {
-    name: 'foo',
+    name: 'chat',
     data() {
         return {
             
@@ -15,6 +19,6 @@ export default {
         
     },
     components: {
-        
+        sendIcon
     },
 }

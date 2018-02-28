@@ -1,0 +1,14 @@
+.header{
+    background-image: linear-gradient(to bottom, #36bbdc 0%, #36bbdc 19%, #719af3 100%);
+
+    &__container{
+        height: 70px;
+        @include aligment($jc: start);
+    }
+
+    &__logo{
+        max-height: 50px;
+
+        img{ height: 100%; }
+    }
+}

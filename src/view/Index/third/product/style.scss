@@ -1,0 +1,105 @@
+.product{
+    width: calc(100% / 12 * 8 - 30px);
+    margin: 0 auto;
+
+    &__heading, &__desc{
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__heading{
+        color: text-color(red);
+        font-size: rem(30px);
+    }
+
+    &__desc{
+        color: text-color(dark);
+        font-size: rem(18px);
+        margin-bottom: 45px;
+    }
+
+    &__info{
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    &__img, &__list{
+        width: calc(100% / 2 - 15px);
+
+    }
+
+    &__img{
+        box-shadow: 0 0 10px rgba(98, 162, 237, 0.55);
+        background-color: bg-color(white);
+        line-height: 0;
+        @include aligment();
+        margin-right: 15px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__list{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        color: text-color(dark);
+    }
+
+    &__title{
+        font-size: rem(16px);
+        font-weight: 700;
+    }
+
+    &__value{
+        font-size: rem(20px);
+        font-style: italic;
+    }
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        &:last-child{ margin-bottom: 0; }
+    }
+
+    &__lbl{
+        margin-bottom: 10px;
+        color: text-color(dark);
+        font-size: rem(18px);
+
+        span{ color: text-color(red); }
+    }
+
+    &__field{
+        background-color: bg-color(white);
+        border: 1px solid bg-color(grey-medium);
+        @include size(100%, 45px);
+        outline: none;
+        padding: 0 15px;
+        color: text-color(dark);
+
+        &:focus{
+            border-color: bg-color(blue);
+        }
+    }
+
+    &__submit{
+        @include aligment();
+        background-image: linear-gradient(to bottom, #36bbdc 0%, #36bbdc 19%, #719af3 100%);
+        color: text-color(light);
+        @include size(100%, 50px);
+        border-radius: 15px;
+        font-size: rem(18px);
+        user-select: none;
+        cursor: pointer;
+    }
+}

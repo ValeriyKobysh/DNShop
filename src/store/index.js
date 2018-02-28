@@ -5,7 +5,7 @@ import VueResource from 'vue-resource'
 Vue.use(Vuex);
 Vue.use(VueResource);
 //#region import modules
-
+import index from './modules/index'
 //endregion
 
 const store = new Vuex.Store({
@@ -19,7 +19,7 @@ const store = new Vuex.Store({
 
   },
   modules: {
-
+    index
   }
 })
 

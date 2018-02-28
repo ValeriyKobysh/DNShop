@@ -1,0 +1,36 @@
+.third{
+    padding: 55px 0 35px;
+    box-shadow: 0 0 10px rgba(18, 18, 18, 0.55);
+    background-color: bg-color(grey-light);
+    position: relative;
+    z-index: 1;
+
+    &__heading{
+        margin: 0 0 45px;
+        text-align: center;
+        font-size: rem(36px);
+        color: text-color(blue);
+    }
+    
+    &__data{
+        width: calc(100% / 12 * 6 - 30px);
+        margin: 0 auto 90px;
+        display: flex;
+        justify-content: space-between;
+
+        &-item{
+            background-color: bg-color(grey-dark);
+            color: text-color(light);
+            width: calc(100% / 2 - 30px);
+            height: 100px;
+            border-radius: 10px;
+            @include aligment();
+            flex-direction: column;
+            @include size(px, px);
+
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}

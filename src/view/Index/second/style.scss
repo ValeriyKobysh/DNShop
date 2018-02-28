@@ -1,0 +1,104 @@
+.second{
+    padding: 50px 0;
+    box-shadow: 0 0 10px rgba(18, 18, 18, 0.55);
+    background-color: bg-color(grey-light);
+    position: relative;
+    z-index: 1;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading{
+        margin: 0 0 30px;
+        font-size: rem(36px);
+        font-weight: 700;
+        color: text-color(blue);
+        text-align: center;
+    }
+
+    &__desc{
+        font-size: rem(18px);
+        color: text-color(dark);
+        margin: 0 0 30px;
+        text-align: center;
+
+        span{
+            color: text-color(blue);
+            display: block;
+        }
+    }
+
+    &__data{
+        width: calc(100% / 12 * 4 - 30px);
+        margin: 30px auto 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-heading{
+            width: 100%;
+            font-weight: 700;
+            text-align: center;
+            color: text-color(dark);
+            margin-bottom: 20px;
+        }
+
+        &-login, &-password{
+            width: calc(100% / 2 - 30px);
+            background-color: bg-color(grey-dark);
+            color: text-color(light);
+            border-radius: 10px;
+            @include size(165px, 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: text-color(blue);
+                font-weight: 700;
+            }
+
+        }
+
+        &-password{
+            margin-left: auto;
+        }
+    }
+
+    &__form{
+        width: calc(100% / 12 * 4 - 30px);
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        &-field{
+            border: 1px solid bg-color(grey-medium);
+            @include size(100%, 45px);
+            background-color: bg-color(white);
+            color: text-color(dark);
+            outline: none;
+            padding: 0 15px;
+            margin-bottom: 30px;
+
+            &:focus{
+                border-color: bg-color(blue);
+            }
+
+            &:last-child{
+                margin-bottom: 50px;
+            }
+        }
+
+        &-submit{
+            background-image: linear-gradient(to bottom, #36bbdc 0%, #36bbdc 19%, #719af3 100%);
+            border-radius: 15px;
+            @include size(100%, 50px);
+            @include aligment();
+            text-transform: uppercase;
+            color: text-color(light);
+            cursor: pointer;
+        }
+    }
+}

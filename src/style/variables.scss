@@ -8,29 +8,39 @@ $countColumnsMobile: 4;
 // ### COLORS ###
 $white-color: #ffffff;
 $black-color: black;
-$orange-color: #ca892d;
+
 $blue-color: #71beff;
-$grey-light-color: #f0f0f0;
-$grey-medium-color: #a8a9aa;
+$blue-dark-color: #3c4865;
+$blue-light-color: #7ba0f0;
+
+$grey-light-color: #f5f5f5;
+$grey-medium-color: #939393;
 $grey-dark-color: #2f2f2f;
+
+$red-color: #e42a2a;
 
 $bg-color: (
     white: $white-color, 
     grey-dark: $grey-dark-color, 
     grey-medium: $grey-medium-color, 
     grey-light: $grey-light-color, 
-    orange: $orange-color, 
-    blue: $blue-color
+    blue: $blue-color,
+    blue-light: $blue-light-color
 );
 
 $ui-color: ( );
 
 $text-color: ( 
-    light: $white-color, 
+    light: $white-color,
+
     blue: $blue-color,
+    blue-dark: $blue-dark-color,
+    blue-light: $blue-light-color,
     blue-hover: lighten($blue-color, 10%),
-    orange: $orange-color, 
-    dark: $grey-dark-color, 
+    
+    red: $red-color,
+
+    dark: $grey-dark-color,
     medium: $grey-medium-color 
 );
 

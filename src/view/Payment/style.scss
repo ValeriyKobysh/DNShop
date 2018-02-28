@@ -1,0 +1,98 @@
+.payment{
+    display: flex;
+    flex-direction: column;
+
+    &__content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    &__heading{
+        color: text-color(dark);
+        font-weight: 700;
+        margin: 0 0 40px;
+        font-size: rem(30px);
+    }
+
+    &__desc{
+        color: text-color(blue);
+        font-size: rem(20px);
+        margin-bottom: 30px;
+    }
+
+    &__avatar{
+        @include size(135px);
+        border-radius: 50%;
+        border: 2px solid bg-color(white);
+        box-shadow: 0 0 10px rgba(66, 66, 66, 0.55);
+        overflow: hidden;
+        margin-bottom: 45px;
+    }
+
+    &__methods{
+        margin-bottom: 50px;
+
+        &-title{
+            text-transform: uppercase;
+            color: text-color(dark);
+            font-size: rem(18px);
+            font-weight: 500;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+        }
+
+        &-item{
+            @include size(75px);
+            @include aligment();
+            border: 1px solid bg-color(grey-medium);
+            border-radius: 10px;
+            background-color: bg-color(grey-light);
+            margin-right: 25px;
+            cursor: pointer;
+            user-select: none;
+
+            svg{ fill: bg-color(grey-medium); transition: 0s; }
+
+            &:last-child{ margin-right: 0; }
+
+            &.active{
+                box-shadow: 0 0 10px rgba(66, 66, 66, 0.55);
+                background-color: bg-color(grey-dark);
+
+                svg{ fill: bg-color(white); }
+            }
+        }
+    }
+
+    &__price{
+        margin-bottom: 20px;
+        font-size: rem(18px);
+        color: text-color(dark);
+
+        span{
+            font-size: rem(24px);
+            color: text-color(red);
+            font-weight: 700;
+        }
+    }
+
+    &__submit{
+        font-size: rem(18px);
+        color: text-color(light);
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, #36bbdc 0%, #36bbdc 19%, #719af3 100%);
+        @include aligment();
+        width: calc(100% / 12 * 4 - 30px);
+        height: 50px;
+        border-radius: 15px;
+    }
+}

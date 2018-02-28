@@ -1,5 +1,9 @@
+//region import components
+import headerComponent from '../../components/header'
+import chatComponent from '../../components/chat'
+//endregion
+
 export default {
-    name: 'foo',
     data() {
         return {
             
@@ -15,6 +19,6 @@ export default {
         
     },
     components: {
-        
+        headerComponent, chatComponent
     },
 }

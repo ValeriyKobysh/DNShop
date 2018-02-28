@@ -68,7 +68,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]',
+          name: '[name].[ext]',
           outputPath: 'image/'
         }
       },
@@ -99,7 +99,7 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      "img": path.resolve(__dirname, 'src/assets/images')
+      "img": path.resolve(__dirname, 'src/assets/')
     },
     extensions: ['*', '.js', '.vue', '.json']
   },

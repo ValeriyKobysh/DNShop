@@ -1,8 +1,10 @@
 export default {
-    name: 'foo',
     data() {
         return {
-            
+            select: [
+                'Пластиковая карта',
+                'Webmoney'
+            ]
         }
     },
     computed: {

@@ -1,5 +1,6 @@
 .container{
     max-width: breakpoints(xl);
+    min-width: breakpoints(xl) - 16px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
