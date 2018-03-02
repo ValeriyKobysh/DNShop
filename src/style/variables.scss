@@ -19,6 +19,10 @@ $grey-dark-color: #2f2f2f;
 
 $red-color: #e42a2a;
 
+$orange-color: #e49923;
+
+$green-color: #25b422;
+
 $bg-color: (
     white: $white-color, 
     grey-dark: $grey-dark-color, 
@@ -39,6 +43,10 @@ $text-color: (
     blue-hover: lighten($blue-color, 10%),
     
     red: $red-color,
+
+    orange: $orange-color,
+
+    green: $green-color,
 
     dark: $grey-dark-color,
     medium: $grey-medium-color 

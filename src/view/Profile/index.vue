@@ -3,7 +3,10 @@
         header-component
 
         .profile__container.container
-            .profile__content content
+            .profile__content 
+                navbar-component
+
+                router-view 
 
             chat-component
 </template>

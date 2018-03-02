@@ -1,0 +1,56 @@
+.responsibility{
+
+    &__container{
+        padding-top: 55px;
+        padding-bottom: 55px;
+        color: text-color(dark);
+        font-size: rem(14px);
+        line-height: rem(18px);
+    }
+
+    &__heading{
+        color: text-color(blue);
+        font-size: rem(24px);
+        font-weight: 700;
+        margin: 0 0 40px;
+    }
+
+    &__title{
+        color: text-color(blue);
+        font-size: rem(18px);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+
+    &__list{
+        counter-reset: number;
+        margin-bottom: 30px;
+        
+        li{
+            margin-bottom: 10px;
+
+            &:before{
+                counter-increment: number;
+                content: counter(number) '.';
+                margin-right: 5px;
+            }
+
+            &:last-child{ margin-bottom: 0; }
+
+            span{ color: text-color(red); }
+        }
+    }
+
+    &__h3{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    pre{
+        color: text-color(blue);
+        font-family: $baseff;
+        font-size: rem(14px);
+        font-style: italic;
+    }
+}

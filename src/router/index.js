@@ -8,6 +8,7 @@ Vue.use(Meta)
 import indexPage from '../view/Index';
 import paymentPage from '../view/Payment';
 import profilePage from '../view/Profile'
+import responsibilityPage from '../view/Responsibility';
 //endregion
 
 //#region import components
@@ -17,6 +18,20 @@ import third from '../view/Index/third';
 import product from '../view/Index/third/product';
 import complete from '../view/Index/third/complete';
 import transfer from '../view/Index/third/transfer';
+import firstStep from '../view/Profile/firstStep';
+import secondStep from '../view/Profile/secondStep';
+import thirdStep from '../view/Profile/thirdStep';
+import fourStep from '../view/Profile/fourStep';
+import fiveStep from '../view/Profile/fiveStep';
+import blocked from '../view/Profile/blocked';
+import pause from '../view/Profile/pause';
+import unpause from '../view/Profile/unpause';
+import protect from '../view/Profile/protect';
+import license from '../view/Profile/license';
+import protection from '../view/Profile/protected';
+import insurance from '../view/Profile/insurance';
+import activateInsurance from '../view/Profile/activateInsurance';
+import final from '../view/Profile/final';
 //endregion
 
 export default new VueRouter(
@@ -68,9 +83,29 @@ export default new VueRouter(
                 component: paymentPage
             },
             {
-                name: 'profile',
                 path: '/profile',
-                component: profilePage
+                component: profilePage,
+                children: [
+                    { name: 'firstStep', path: 'first', component: firstStep },
+                    { name: 'secondStep', path: 'second', component: secondStep },
+                    { name: 'thirdStep', path: 'third', component: thirdStep },
+                    { name: 'fourStep', path: 'four', component: fourStep },
+                    { name: 'fiveStep', path: 'five', component: fiveStep },
+                    { name: 'blocked', path: 'blocked', component: blocked },
+                    { name: 'pause', path: 'pause', component: pause },
+                    { name: 'unpause', path: 'unpause', component: unpause },
+                    { name: 'protect', path: 'protect', component: protect },
+                    { name: 'license', path: 'license', component: license },
+                    { name: 'protected', path: 'protected', component: protection },
+                    { name: 'insurance', path: 'insurance', component: insurance },
+                    { name: 'activateInsurance', path: 'activate-insurance', component: activateInsurance },
+                    { name: 'final', path: 'final', component: final },
+                ]
+            },
+            {
+                name: 'responsibility',
+                path: '/responsibility',
+                component: responsibilityPage
             }
         ]
     }

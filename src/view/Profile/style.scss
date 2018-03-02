@@ -2,9 +2,13 @@
 
     &__container{
         display: flex;
+        padding-top: 65px;
+        padding-bottom: 65px;
     }
 
     &__content{
         flex-grow: 1;
+        margin-right: 30px;
+        width: calc(100% / 12 * 8 - 30px);
     }
 }

@@ -1,7 +1,12 @@
 .chat{
     width: calc(100% / 12 * 4 - 30px);
+    height: 445px;
     flex-shrink: 0;
     box-shadow: 0 0 9px 1px rgba(66, 66, 66, 0.35);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     &__header{
         text-align: center;
@@ -14,9 +19,15 @@
     }
 
     &__body{
-        min-height: 355px;
+        height: 355px;
+        width: 100%;
+        // max-height: 500px;
         background-color: bg-color(grey-light);
         padding: 20px 10px;
+        overflow-y: auto;
+        position: absolute;
+        // top: 40px;
+        bottom: 50px;
     }
 
     &__msg{
@@ -26,11 +37,24 @@
         display: flex;
 
         &_to{
-            border-radius: 0 15px 15px;
+            border-radius: 15px 0 15px 15px;
+            background-color: bg-color(white);
+
+            .chat__avatar{ 
+                order: 1;
+                margin-left: auto;
+            }
+
+            .chat__info{ padding-right: 20px; color: text-color(dark);}
         }
 
         &_from{
+            border-radius: 0 15px 15px 15px;
+            background-image: linear-gradient(to right, #719af3 0%, #36bbdc 81%, #36bbdc 100%);
 
+            .chat__info{ padding-left: 20px; color: text-color(light); }
+
+            .chat__time{ order: 1; }
         }
 
         &:last-child{ margin-bottom: 0; }
@@ -41,7 +65,33 @@
         border-radius: 50%;
         overflow: hidden;
         border: 2px solid bg-color(white);
+    }
 
+    &__info{
+        width: calc(100% - 55px);
+        flex-grow: 1;
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__time{
+        font-size: rem(12px);
+        color: text-color(medium);
+    }
+
+    &__name{
+        font-weight: 700;
+        font-size: rem(14px);
+    }
+
+    &__text{
+        font-size: rem(14px);
+        width: 100%;
     }
 
     &__footer{
@@ -49,6 +99,7 @@
         background-color: bg-color(white);
         height: 50px;
         display: flex;
+        margin-top: auto;
     }
 
     &__field{

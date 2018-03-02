@@ -21,7 +21,8 @@
             .payment__price Стоимость: 
                 span 153 РУБ.
 
-            a(:href="link()").payment__submit.link ОПЛАТИТЬ УСЛУГУ 
+            //- a(:href="link()").payment__submit.link ОПЛАТИТЬ УСЛУГУ 
+            router-link.payment__submit.link(:to="{ name: 'firstStep' }") ОПЛАТИТЬ УСЛУГУ
 </template>
 
 <script src='./script.js'></script>

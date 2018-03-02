@@ -1,7 +1,5 @@
 //region import components
 import headerComponent from '../../components/header'
-import navbarComponent from '../../components/navbar'
-import chatComponent from '../../components/chat'
 //endregion
 
 export default {
@@ -20,6 +18,6 @@ export default {
         
     },
     components: {
-        headerComponent, chatComponent, navbarComponent
+        headerComponent
     },
 }
