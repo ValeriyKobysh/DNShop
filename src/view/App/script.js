@@ -1,5 +1,9 @@
+//region import modules
+import { mapGetters, mapMutations } from 'vuex';
+//endregion
+
 //region imports components
-import foo from '../../components/footer'
+import foo from '../../components/footer';
 //endregion
 
 export default {
@@ -13,12 +17,12 @@ export default {
         }
     },
     computed: {
-
+        ...mapGetters(['Spinner', 'Checked'])
     },
     components: {
         foo
     },
     methods: {
-        
+
     }
 }

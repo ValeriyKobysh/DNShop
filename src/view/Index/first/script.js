@@ -1,3 +1,7 @@
+//region import modules
+import { mapGetters, mapMutations } from 'vuex';
+//endregion
+
 //region import icons
 import listIcon from '../../../assets/icons/list-icon.svg'
 import dollarsIcon from '../../../assets/icons/dollars-icon.svg'
@@ -27,15 +31,26 @@ export default {
         }
     },
     computed: {
-        
     },
     props: {
         
     },
     methods: {
-        
+        // ...mapMutations(['preloader', 'reloadPreloader']),
     },
     components: {
         listIcon, dollarsIcon, labelIcon
     },
+    // created(){ this.preloader({time: 1000, check: false}); },
+
+    // beforeRouteEnter: (to, from, next) => {
+    //     next((vm) => {
+    //         vm.$store.commit('reloadPreloader')
+    //     })
+    // },
+    // beforeRouterLeave: (to, from, next) => {
+    //     next((vm) => {
+    //         vm.$store.commit('reloadPreloader')
+    //     })
+    // }
 }

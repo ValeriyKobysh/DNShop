@@ -5,7 +5,11 @@ import userIcon from '../../../assets/icons/user-icon.svg'
 export default {
     data() {
         return {
-            
+            msg: {
+                firstShow: false,
+                secondType: false,
+                secondMsg: false
+            }
         }
     },
     computed: {
@@ -20,4 +24,19 @@ export default {
     components: {
         userIcon
     },
+    mounted(){
+        setTimeout(() => {
+            this.msg.firstShow = true;
+
+            setTimeout(() => {
+                this.msg.secondType = true;
+            }, 1000);
+
+            setTimeout(() => {
+                this.msg.secondType = false;
+                this.msg.secondMsg = true;
+            }, 4000);
+
+        }, 6000);
+    }
 }

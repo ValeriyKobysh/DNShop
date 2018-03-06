@@ -1,3 +1,11 @@
+//region import modules
+import { mapGetters, mapMutations } from 'vuex'
+//endregion
+
+//region import mixin
+
+//endregion
+
 export default {
     data() {
         return {
@@ -8,13 +16,11 @@ export default {
         }
     },
     computed: {
-        
     },
     props: {
         
     },
     methods: {
-        
     },
     components: {
         

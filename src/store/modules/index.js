@@ -3,7 +3,7 @@ const index = {
         productsData: [
             {
                 id: 1,
-                img: 'http://via.placeholder.com/360x320/2f2f2f',
+                img: 'http://via.placeholder.com/360x270/2f2f2f',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 22475619,
                 city: 'Москва',
@@ -12,7 +12,7 @@ const index = {
             },
             {
                 id: 2,
-                img: 'http://via.placeholder.com/360x320/4c4c4c',
+                img: 'http://via.placeholder.com/360x270/4c4c4c',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 44556677,
                 city: 'Москва',
@@ -21,7 +21,7 @@ const index = {
             },
             {
                 id: 3,
-                img: 'http://via.placeholder.com/360x320/5c2c5c',
+                img: 'http://via.placeholder.com/360x270/5c2c5c',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 12345678,
                 city: 'Москва',
@@ -30,7 +30,7 @@ const index = {
             },
             {
                 id: 4,
-                img: 'http://via.placeholder.com/360x320/7e4c3c',
+                img: 'http://via.placeholder.com/360x270/7e4c3c',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 32345789,
                 city: 'Москва',
@@ -39,7 +39,7 @@ const index = {
             },
             {
                 id: 5,
-                img: 'http://via.placeholder.com/360x320/9e4c8c',
+                img: 'http://via.placeholder.com/360x270/9e4c8c',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 88993633,
                 city: 'Москва',
@@ -48,7 +48,7 @@ const index = {
             },
             {
                 id: 6,
-                img: 'http://via.placeholder.com/360x320/0e8c6c',
+                img: 'http://via.placeholder.com/360x270/0e8c6c',
                 product: 'Холодильник Gorenje RKI4151AW',
                 order: 88993633,
                 city: 'Москва',

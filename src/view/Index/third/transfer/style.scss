@@ -1,7 +1,6 @@
 .transfer{
 
     &__view{
-        width: calc(100% / 2 - 30px);
         height: 100px;
         margin: 0 auto 30px;
         text-align: center;
@@ -23,7 +22,6 @@
     &__text{
         text-align: center;
         margin: 0 auto 30px;
-        width: calc(100% / 12 * 8 - 30px);
         color: text-color(dark);
         font-weight: 700;
 
@@ -40,7 +38,7 @@
     &__submit{
         font-size: rem(18px);
         color: text-color(light);
-        width: calc(100% / 2 - 30px);
+        width: 100%;
         height: 50px;
         margin: 0 auto;
         background-image: linear-gradient(to bottom, #36bbdc 0%, #36bbdc 19%, #719af3 100%);

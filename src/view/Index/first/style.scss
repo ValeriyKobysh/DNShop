@@ -129,7 +129,7 @@
 
         &-btn{
             @include aligment();
-            background-color: bg-color(grey-dark);
+            background-color: bg-color(green);
             border-radius: 15px;
             @include size(460px, 50px);
             cursor: pointer;
@@ -137,7 +137,7 @@
             color: text-color(light);
 
             &:hover{
-                background-color: darken(bg-color(grey-dark), 5%);
+                background-color: darken(bg-color(green), 5%);
             }
         }
 
@@ -155,6 +155,7 @@
                 font-size: rem(60px);
                 font-weight: 700;
                 margin-top: 20px;
+                color: text-color(red);
             }
         }
     }

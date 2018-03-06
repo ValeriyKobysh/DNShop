@@ -107,6 +107,9 @@ export default new VueRouter(
                 path: '/responsibility',
                 component: responsibilityPage
             }
-        ]
+        ],
+        scrollBehavior(to, from, savedPosition){
+            return { x: 0, y: 0 }
+        }
     }
 )

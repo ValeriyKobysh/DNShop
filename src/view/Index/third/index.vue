@@ -1,16 +1,17 @@
 <template lang='pug'>
     section.third
-        .third__container.container
-            h2.third__heading Личный кабинет сотрудника {{User.login}}
+        .container
+            .third__container
+                h2.third__heading Личный кабинет сотрудника {{User.login}}
 
-            .third__data
-                .third__data-item В обработке:
-                    span {{Cash.processing}} руб.
+                .third__data
+                    .third__data-item В обработке:
+                        span {{Cash.processing}} руб.
 
-                .third__data-item Доступно к выводу:
-                    span {{Cash.available}} руб.
+                    .third__data-item Доступно к выводу:
+                        span {{Cash.available}} руб.
 
-            router-view
+                router-view
 
 </template>
 
