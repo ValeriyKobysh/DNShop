@@ -54,10 +54,33 @@
             margin-bottom: 10px;
         }
 
+        &-finhead{
+            color: text-color(dark);
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: rem(24px);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         &-desc{
-            color: text-color(blue);
+            color: text-color(red);
             font-size: rem(14px);
             margin-bottom: 20px;
+        }
+
+        &-findesc{
+            color: text-color(blue);
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        &-link{
+            color: text-color(dark);
+            font-weight: 700;
+            font-size: rem(18px);
+            display: block;
+            text-align: center;
         }
 
         &-msg{

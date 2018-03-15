@@ -1,16 +1,19 @@
 <template lang='pug'>
     .step
         .step__top
-            .step__top-left
+            .step__top-left.step__top-left_error
                 span.step__top-icon
-                    success-icon(height="140")
+                    error-icon(height="140")
 
             .step__top-right
-                .step__top-heading Денежные средства успешно отправлены
+                .step__top-heading ВЫВОД ЗАРАБОТАННЫХ СРЕДСТВ
 
                 .step__top-desc Не покидайте страницу!!! Если вы закроете данную страницу, сессия будет завершена и Ваш доход утерян
 
-                .step__top-t1.step__top-t3 СРЕДСТВА УСПЕШНО ОТПРАВЛЕНЫ!
+                .step__top-t2 
+                    p Чтобы вам <span style="color: orange">отправили деньги</span> вручную, наймите личного менеджера. Менеджер будет каждый деть самостоятельно <span style="color: orange">отправлять вам деньги</span> с вашего баланса. 
+                    
+                    p <span style="font-weight: bold">Сразу после оплаты услуг менеджера, будет отправлен денежный перевод</span>
 
         .step__bot
             .step__bot-header ВЫВОД СРЕДСТВ
@@ -33,13 +36,14 @@
 
                         span.step__bot-sum-value 37458 руб
 
-                p.step__bot-t1 Статус: <span class="green"> Выплачено</span>
+                p.step__bot-t1 Статус: <span class="orange"> Ожидается</span>
 
-                p.step__bot-t2 На указанный вами счет отправлен денежный перевод. <br />Поступление средств моментальное. Если вам еще не пришли <br />деньги, нажмите кнопку "Поиск перевода".
+                p.step__bot-t2 Услуги личного менеджера на 12 месяцев: <span class="blue bold large">1125 руб</span>
 
-                router-link.step__bot-submit.link(:to="{ name: 'blocked' }") ПОДКЛЮЧИТЬ УСЛУГУ
+                router-link.step__bot-submit.link(:to="{ name: 'secondStep' }") Оплатить услуги менеджера
 
                 .step__bot-footer Сразу после оплаты комиссии, <br />вам будет отправлен перевод в сумме: 38000 руб.
+
 </template>
 
 <script src='./script.js'></script>

@@ -35,6 +35,7 @@ body {
   font-size: $basefz;
   font-weight: 400;
   color: text-color(text);
+  min-width: breakpoints(xl);
 
   & * {
     flex-shrink: 0;

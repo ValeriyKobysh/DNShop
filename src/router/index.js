@@ -19,6 +19,7 @@ import product from '../view/Index/third/product';
 import complete from '../view/Index/third/complete';
 import transfer from '../view/Index/third/transfer';
 import firstStep from '../view/Profile/firstStep';
+import automatic from '../view/Profile/automatic';
 import secondStep from '../view/Profile/secondStep';
 import thirdStep from '../view/Profile/thirdStep';
 import fourStep from '../view/Profile/fourStep';
@@ -31,6 +32,7 @@ import license from '../view/Profile/license';
 import protection from '../view/Profile/protected';
 import insurance from '../view/Profile/insurance';
 import activateInsurance from '../view/Profile/activateInsurance';
+import franchise from '../view/Profile/franchise';
 import final from '../view/Profile/final';
 //endregion
 
@@ -86,7 +88,8 @@ export default new VueRouter(
                 path: '/profile',
                 component: profilePage,
                 children: [
-                    { name: 'firstStep', path: 'first', component: firstStep },
+                    { name: 'firstStep', path: '', component: firstStep },
+                    { name: 'automatic', path: 'automatic', component: automatic },
                     { name: 'secondStep', path: 'second', component: secondStep },
                     { name: 'thirdStep', path: 'third', component: thirdStep },
                     { name: 'fourStep', path: 'four', component: fourStep },
@@ -99,6 +102,7 @@ export default new VueRouter(
                     { name: 'protected', path: 'protected', component: protection },
                     { name: 'insurance', path: 'insurance', component: insurance },
                     { name: 'activateInsurance', path: 'activate-insurance', component: activateInsurance },
+                    { name: 'franchise', path: 'franchise', component: franchise },
                     { name: 'final', path: 'final', component: final },
                 ]
             },

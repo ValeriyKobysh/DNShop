@@ -17,6 +17,14 @@
         text-align: center;
         font-size: rem(36px);
         color: text-color(blue);
+
+        span{
+            font-size: rem(16px);
+            line-height: rem(22px);
+            color: text-color(red);
+            display: block;
+            padding-top: 15px;
+        }
     }
     
     &__data{

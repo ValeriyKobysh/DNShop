@@ -1,3 +1,7 @@
+//region import modules
+import { mapGetters } from 'vuex';
+//endregion
+
 //region import components
 import headerComponent from '../../components/header';
 //endregion
@@ -5,7 +9,7 @@ import headerComponent from '../../components/header';
 //region import icons
 import visaIcon from '../../assets/icons/visa-icon.svg';
 import mobileIcon from '../../assets/icons/mobile-icon.svg';
-import yandexIcon from '../../assets/icons/yandex-icon.svg'
+import yandexIcon from '../../assets/icons/yandex-icon.svg';
 //endregion
 
 export default {
@@ -19,7 +23,7 @@ export default {
         }
     },
     computed: {
-        
+        ...mapGetters(['User'])
     },
     props: {
         

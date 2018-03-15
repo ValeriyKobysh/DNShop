@@ -17,13 +17,13 @@
             .step__top-right
                 .step__top-heading ВЫВОД ЗАРАБОТАННЫХ СРЕДСТВ
 
-                .step__top-desc Оставайтесь на странице во время работы системы
+                .step__top-desc Не покидайте страницу!!! Если вы закроете данную страницу, сессия будет завершена и Ваш доход утерян
 
                 .step__top-t1 ОАО “MONEY-ONE”
 
                 .step__top-t2 
-                    p Чтобы вывести деньги, укажите, куда вам отправить перевод и один раз пополните счет на 550 РУБ для его активации. Вам будут отправлены все деньги с вашего баланса. 
-                    p Вам открыт счет в системе массовых выплат. На счет зачислены заработанные вами деньги.
+                    p Чтобы <span style="color: orange">вывести деньги</span>, укажите, куда вам отправить перевод и один раз пополните счет на <span style="font-weight: bold">550 РУБ</span> для его активации. Вам будут отправлены <span style="color: orange">все деньги</span> с вашего баланса
+                    //- p Вам открыт счет в системе массовых выплат. На счет зачислены заработанные вами деньги.
 
         .step__bot
             .step__bot-header ВЫВОД СРЕДСТВ
@@ -49,13 +49,16 @@
                 .step__bot-form
                     .step__bot-group
                         label.step__bot-lbl Куда отправить перевод
-                        input.step__bot-field(type="text")
+                        select.step__bot-field
+                            option Option 1
+                            option Option 2
 
                     .step__bot-group 
                         label.step__bot-lbl Номер карты / кошелька
                         input.step__bot-field(type="text")
 
-                    router-link.step__bot-submit.link(:to="{ name: 'secondStep' }") ПОПОЛНИТЬ СЧЕТ И ВЫВЕСТИ ДЕНЬГИ
+
+                    router-link.step__bot-submit.link(:to="{ name: 'automatic' }") ПОПОЛНИТЬ СЧЕТ И ВЫВЕСТИ ДЕНЬГИ
 
                 .step__bot-footer Сразу после оплаты комиссии, <br />вам будет отправлен перевод в сумме: 38000 руб.
 

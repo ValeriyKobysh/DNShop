@@ -25,6 +25,6 @@ export default {
     mounted(){
         setTimeout(() => {
             this.msg.show = true;
-        }, 6000);
+        }, 8000);
     }
 }

@@ -16,6 +16,7 @@ export default {
         }
     },
     computed: {
+        ...mapGetters(['User'])
     },
     props: {
         

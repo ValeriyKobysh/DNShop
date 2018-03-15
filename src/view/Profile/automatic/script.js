@@ -1,5 +1,5 @@
 //region import icons
-import successIcon from '../../../assets/icons/success-icon.svg'
+import errorIcon from '../../../assets/icons/error-icon.svg'
 //endregion
 
 export default {
@@ -18,6 +18,6 @@ export default {
         
     },
     components: {
-        successIcon
+        errorIcon
     },
 }

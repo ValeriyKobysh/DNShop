@@ -22,7 +22,14 @@
         font-weight: 500;
         font-size: rem(24px);
         color: text-color(dark);
-        margin-bottom: 65px;
+        margin-bottom: 30px;
+    }
+    
+    &__t4{
+        margin-bottom: 30px;
+        font-size: rem(18px);
+        line-height: rem(24px);
+        text-align: center;
     }
 
     &__field, &__select, &__submit{

@@ -5,7 +5,7 @@
         .payment__content
             h1.payment__heading Интернет - магазин бытовой техники DNShop
 
-            .payment__desc Активация аккаунта User1508. Вывод (133.04$)
+            .payment__desc Активация аккаунта {{User.login}}. Вывод (133.04$)
 
             .payment__avatar
                 img(src="http://via.placeholder.com/135x135")
