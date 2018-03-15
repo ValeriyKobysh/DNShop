@@ -3,7 +3,6 @@
         .container
             .third__container
                 h2.third__heading Личный кабинет сотрудника {{User.login}}
-                    span Не покидайте страницу!!!! Если вы закроете данную страницу, сессия будет завершена и Ваш доход утерян
 
                 .third__data
                     .third__data-item В обработке:
